@@ -1,0 +1,42 @@
+body,
+html {
+  height: 100%;
+}
+
+.main_container {
+  background-image: url("../images/Sunrise_Over_Saint_Lucia_Bay.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Waiting for the Sunrise", cursive;
+  color: white;
+}
+
+.sticky_nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar_menu {
+  opacity: 0.8;
+  background: #6f2b06;
+}
+
+.nav_link {
+  font-family: "Waiting for the Sunrise", cursive;
+}
+.second_container {
+  background-image: url("../images/Sunrise_at_ocean.JPG");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+}
