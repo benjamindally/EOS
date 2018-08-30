@@ -16,8 +16,13 @@ html {
   color: white;
 }
 
+#band_name_row {
+  height: 500px;
+}
+
 #band_name {
   font-size: 800%;
+  padding-top: 18%;
 }
 .sticky_nav {
   position: fixed;
@@ -46,6 +51,9 @@ html {
   padding-top: 50px;
 }
 
+.song {
+  padding: 20px 20px 20px 20px;
+}
 .nav_link:before {
   content: "";
   position: absolute;
@@ -84,6 +92,15 @@ a:hover {
   margin: 0px;
 }
 
+.music_container {
+  padding-top: 3%;
+}
+
+#music_header {
+  font-size: 400%;
+  font-family: "Waiting for the Sunrise", cursive;
+  color: white;
+}
 .bio_picture {
   background-image: url("../images/Sunrise_Over_Saint_Lucia_Bay.jpg");
   height: 100%;
@@ -98,6 +115,12 @@ a:hover {
   z-index: 10;
 }
 
+.bio_picture {
+  height: 500px;
+}
+#biogrpahy_container_outside_wrapper {
+  padding-top: 10%;
+}
 #biography_selfie {
   background: black;
   /* margin: 0px 0px 15px 30px; */
@@ -109,4 +132,59 @@ a:hover {
   font-family: "Raleway", serif;
   /* margin: 0px 30px 15px 0px; */
   z-index: 1;
+}
+
+#connect_form_outer_row {
+  background: black;
+}
+
+.connect_form_wrapper {
+  background: rgb(250, 74, 21);
+  margin: auto;
+  margin-top: 4%;
+  opacity: 0.7;
+}
+
+#contact_form {
+  padding: 20px 10px 20px 10px;
+}
+
+.contact_form_inputs_buttons {
+  width: 100%;
+  border-radius: 5px;
+  margin: 8px 0px 8px 0px;
+  padding: 8px 0px 8px 0px;
+}
+
+#connect_with_me {
+  font-family: "Waiting for the Sunrise", cursive;
+  font-size: 500%;
+  color: white;
+  font-weight: bold;
+  margin: 30px 0px 30px 0px;
+}
+
+#connect_submit_button {
+  color: white;
+  font-family: "Waiting for the Sunrise", cursive;
+  font-size: 150%;
+  background: rgb(172, 52, 15);
+}
+
+input::placeholder {
+  color: gray;
+  font-family: "Waiting for the Sunrise", cursive;
+  font-size: 110%;
+}
+
+textarea {
+  color: gray;
+  font-family: "Waiting for the Sunrise", cursive;
+  font-size: 110%;
+}
+.connect_form_header {
+  font-family: "Waiting for the Sunrise", cursive;
+  font-size: 200%;
+  color: white;
+  font-weight: bold;
 }
