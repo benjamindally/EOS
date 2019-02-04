@@ -1,19 +1,19 @@
 <?php
 
-if (isset($_POST['submit'])){
+if (isset($_POST['name'], $_POST['email'], $_POST['message'])){
     $name = $_POST['name'];
     $emailFrom = $_POST['email'];
     $message = $_POST['message'];
 
-    $mailTo = "benjamin.dally@icloud.com";
+    $mailTo = "rosalie@megankraft.com, benji686@gmail.com";
 
     $headers = "From: " .$emailFrom;
 
-    $txt = "You have recieved an email from ".$name.".\n\n".$message;
+    $txt = "Rosalie,\n\nYou have recieved an email from your website. ".$name." would like to connect with you.\n\nMessage:\n".$message;
 
-    mail($mailTo, $txt, $headers);
+    mail($mailTo, $headers, $txt);
 
-    header("Location: index.html?mailsent");
+    header("Location: ../../index.html$mailsent");
     
 }
 

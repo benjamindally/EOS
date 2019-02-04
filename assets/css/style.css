@@ -1,28 +1,39 @@
 body,
 html {
   height: 100%;
+  /* background: rgb(253, 238, 172); */
 }
 
 .main_container {
-  background-image: url("../images/Sunrise_Over_Saint_Lucia_Bay.jpg");
-  height: 100%;
+  background-image: url("../images/rosalie_on_beach.JPG");
+  height: 700px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0px;
   margin: 0px;
-  font-family: "Waiting for the Sunrise", cursive;
-  color: white;
+  width: 100%;
+
+  /* color: white; */
 }
 
 #band_name_row {
-  height: 500px;
+  height: 100%;
 }
 
-#band_name {
+.band_name {
   font-size: 800%;
-  padding-top: 18%;
+  padding-top: 30%;
+  color: white;
+  font-family: "Waiting for the Sunrise", cursive;
+}
+
+.genre {
+  font-size: 600%;
+  /* padding-top: 30%; */
+  color: white;
+  font-family: "Waiting for the Sunrise", cursive;
 }
 .sticky_nav {
   position: fixed;
@@ -37,23 +48,52 @@ html {
   background: white;
   height: 70px;
   opacity: 0.5;
+  padding-top: 20px;
 }
 
 .nav_link {
   font-family: "Waiting for the Sunrise", cursive;
   color: black;
   text-decoration: none;
-  padding: 22px 10px 0px 10px;
+  padding: 0px 12px 0px 12px;
+  font-size: 120%;
   position: relative;
 }
 
-.iframe_dont_move {
+.big_song {
+  width: 100%;
+  height: 100%;
+}
+
+.small_song {
+  width: 100%;
+}
+
+.last_song {
+  width: 60%;
+}
+
+.middle_song_row {
   padding-top: 50px;
+}
+.iframe_dont_move {
+  padding: 60px 0px;
 }
 
 .song {
   padding: 20px 20px 20px 20px;
 }
+
+.song_name {
+  font-family: "Waiting for the Sunrise", cursive;
+  font-size: 300%;
+  color: white;
+  display: none;
+}
+.middle_row {
+  margin-bottom: 15%;
+}
+
 .nav_link:before {
   content: "";
   position: absolute;
@@ -77,6 +117,7 @@ nav > a:hover:before {
 
 a:hover {
   color: black;
+  cursor: pointer;
 }
 .nav_list {
   display: inline;
@@ -93,7 +134,7 @@ a:hover {
 }
 
 .music_container {
-  padding-top: 3%;
+  padding: 3% 0% 5% 0%;
 }
 
 #music_header {
@@ -118,8 +159,13 @@ a:hover {
 .bio_picture {
   height: 500px;
 }
+
+.bio_backgound_dont_move {
+  height: 560px;
+}
+
 #biogrpahy_container_outside_wrapper {
-  padding-top: 10%;
+  padding-top: 5%;
 }
 #biography_selfie {
   background: black;
@@ -129,31 +175,52 @@ a:hover {
 .biography_container {
   background: white;
   color: black;
+
   font-family: "Raleway", serif;
-  /* margin: 0px 30px 15px 0px; */
+
   z-index: 1;
+  margin-top: 4%;
 }
 
-#connect_form_outer_row {
-  background: black;
+.biography_container h1 {
+  padding-top: 20px;
+}
+
+.bio {
+  padding-bottom: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+.contact_background {
+  background-image: url("../images/Burning_Yellow_Sunset.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Raleway", serif;
+  color: white;
+  z-index: 10;
 }
 
 .connect_form_wrapper {
-  background: rgb(250, 74, 21);
   margin: auto;
-  margin-top: 4%;
-  opacity: 0.7;
+  margin-top: 10%;
 }
 
 #contact_form {
-  padding: 20px 10px 20px 10px;
+  padding: 20px 10px 200px 10px;
 }
 
 .contact_form_inputs_buttons {
-  width: 100%;
-  border-radius: 5px;
+  width: 50%;
+  /* border-radius: 5px; */
   margin: 8px 0px 8px 0px;
   padding: 8px 0px 8px 0px;
+  filter: drop-shadow(0 0 0.25rem white);
 }
 
 #connect_with_me {
@@ -168,17 +235,28 @@ a:hover {
   color: white;
   font-family: "Waiting for the Sunrise", cursive;
   font-size: 150%;
-  background: rgb(172, 52, 15);
+  background: #375e97;
+  padding: 0px 50px 0px 50px;
+  width: 20%;
+}
+
+#timeout {
+  color: white;
+  font-family: "Waiting for the Sunrise", cursive;
+  font-size: 150%;
+  background: #375e97;
+  padding: 0px 50px 0px 50px;
+  width: 20%;
 }
 
 input::placeholder {
-  color: gray;
+  color: rgb(91, 91, 91);
   font-family: "Waiting for the Sunrise", cursive;
   font-size: 110%;
 }
 
 textarea {
-  color: gray;
+  color: rgb(91, 91, 91);
   font-family: "Waiting for the Sunrise", cursive;
   font-size: 110%;
 }
@@ -187,4 +265,97 @@ textarea {
   font-size: 200%;
   color: white;
   font-weight: bold;
+  /* filter: drop-shadow(0 0 0.01rem black); */
+}
+
+.footer {
+  background: #fb6542;
+  color: white;
+  font-family: "Waiting for the Sunrise", cursive;
+  padding: 25px 0px 15px 0px;
+}
+
+.mobile {
+  background: #fb6542;
+}
+
+#mobile_pic {
+  width: 50%;
+  display: none;
+  margin-top: 20%;
+  border: 3px solid white;
+}
+
+.band_name_moblie {
+  font-size: 800%;
+  padding-top: 40px;
+  color: white;
+
+  font-family: "Waiting for the Sunrise", cursive;
+}
+
+.genre_mobile {
+  font-size: 600%;
+  color: white;
+  font-family: "Waiting for the Sunrise", cursive;
+  padding-bottom: 20px;
+}
+
+#url {
+  display: none !important;
+}
+
+@media only screen and (max-width: 575px) {
+  .contact_form_inputs_buttons {
+    width: 100%;
+  }
+
+  .song_name {
+    display: inherit;
+  }
+
+  .big_song_div {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 30px;
+  }
+
+  .small_songs_top_row {
+    margin: 50px 0px 0px 0px;
+  }
+
+  .middle_row {
+    margin: 0%;
+  }
+
+  .middle_song_row {
+    padding: 0px;
+  }
+
+  .music_container {
+    padding: 0px;
+  }
+
+  .middle_row_big_song {
+    margin-bottom: 70px;
+  }
+  .biography_container {
+    margin-top: 15%;
+  }
+
+  .last_song {
+    width: 100%;
+  }
+
+  #music_header {
+    padding-top: 5%;
+  }
+
+  #contact_form {
+    padding: 25% 0% 0% 0%;
+  }
+
+  .bio_backgound_dont_move {
+    height: 100%;
+  }
 }

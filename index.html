@@ -3,6 +3,7 @@
 <head>
     <title>Rosalie</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -15,94 +16,161 @@
 </head>
 
 <body>
-    <div class="jumbotron jumbotron-fluid text-center  main_container parallax">
-        <div>
+    <div class="">
+        <div class="main main_container">
 
-            <div class="row " id="band_name_row">
-                <div class="col-md-12">
-                    <h1 class="display-4" id="band_name">Rosalie</h1>
+            <div class="row text-center" id="band_name_row">
+                <div class="col-md-1"><img id="mobile_pic" src="./assets/images/rosalie_for_moblie.jpg" alt="Rosalie"></div>
+                <div class="col-md-3">
+                    <h1 class="display-4 band_header band_name" id="name_section">Rosalie</h1>
+                    <h2 class="display-4 genre_header genre">Music</h2>
                 </div>
+                <div class="col-md-8 mobile_pic"></div>
 
 
             </div>
 
 
 
-            <nav class="navbar_menu text-center" id="navbar">
-                <a class="navbar-brand nav_link" href="#">rosalie</a>
-                <a class="navbar-brand nav_link" href="#">about</a>
-                <a class="navbar-brand nav_link" href="#">contact</a>
-            </nav>
+        </div>
 
-            <div class="jumbotron jumbotron-fluid text-center second_container parallax">
-                <div class="container music_container text-center">
-                    <div class="container">
+        <div class="text-center">
+            <nav class="navbar_menu" id="navbar">
+                <a class="nav_link" id="home_nav_link" href="#name_section">rosalie</a>
+                <a class="nav_link" id="about_nav_link" href="#bio_section">about</a>
+                <a class="nav_link" href="#music_header">listen</a>
+                <a class="nav_link" id="contact_nav_link" href="#connect_form_outer_row">contact</a>
+            </nav>
+        </div>
+
+        <div class="jumbotron jumbotron-fluid text-center bio_picture parallax" id="bio_parallax_picture">
+            <div id="biogrpahy_container_outside_wrapper" class="row">
+
+                <div id="bio_dont">
+
+                    <div class="col-md-12 biography_container" id="bio_section">
+                        <h1>Biography</h1>
+                        <div class="bio_paragraph" id="bio_paragraph_wrapper">
+                            <p class="bio">Megan Rosalie Kraft's ecclectic talents and tastes showcase her enduring respect
+                                and love for music. Working as a composer, lyracist, singer, and producer, Rosalie has infused
+                                dynamic passion into her art. Classically trained in voice along with studies in global compositions,
+                                she has in-depth understanding of theory and vocal production.<br><br>Rosalie has experience
+                                working in multiple genres and is comfortable working on a variety of mediums such as film,
+                                dance, or advertisement. Of her many talents, she primarily works in electronic pop using
+                                Logic Pro X and Ableton Digital Audio Workstations. Based out of San Diego, Megan Rosalie
+                                Kraft is able to travel to Los Angelos or Orange County and is interested in working in many
+                                capacities. Contact Rosalie for her music services.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="jumbotron jumbotron-fluid text-center second_container">
+            <div id="iframe_wrapper">
+                <div class="music_container text-center">
+                    <div class="iframe_wrapper">
 
                         <h1 class="display-4" id="music_header">Listen</h1>
 
                     </div>
-                    <div class="iframe_wrapper">
-                        <iframe class="song" width="20%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486621864&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                        <iframe class="song" width="20%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/370122329&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                        <iframe class="song" width="20%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/344938851&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                    <div class="row">
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-5 big_song_div">
+                            <iframe class="song big_song" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/370122329&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                            <div class="col-md-12">
+                                <p class="song_name">Rise</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-5 small_songs_top_row">
+                            <iframe class="song small_song" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486621864&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                            <div class="col-md-12">
+                                <p class="song_name">Move</p>
+                            </div>
+                            <iframe class="song small_song" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/344938851&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                            <div class="col-md-12">
+                                <p class="song_name">Ice Cave</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-1"></div>
+                    </div>
+
+                    <div class="row middle_song_row">
+                        <!-- <div class="col-md-1"></div> -->
+                        <div class="col-sm-3">
+                            <iframe class="song small_song middle_row" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/324799323&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                            <div class="col-md-12">
+                                <p class="song_name">White Rabbit</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 big_song_div middle_row_big_song">
+                            <iframe class="song big_song" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/323137223&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                            <div class="col-md-12">
+                                <p class="song_name">Heartbeat</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <iframe class="song small_song middle_row" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/323152950&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                            <div class="col-md-12">
+                                <p class="song_name">Roses are Red</p>
+                            </div>
+                        </div>
 
                     </div>
-                    <div class="iframe_wrapper">
-                        <iframe class="song" width="20%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/324799323&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                        <iframe class="song" width="20%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/323152950&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                        <iframe class="song" width="20%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/323137223&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                    </div>
-                    <div class="ifram_wrapper">
-                        <iframe class="song" width="20%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/278292519&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                        <iframe class="song" width="20%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/276735940&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-
-                    </div>
+                    <div class="col-md-2"></div>
 
                 </div>
-            </div>
+                <div class="row bottom_song_row">
 
-            <div class="jumbotron jumbotron-fluid text-center bio_picture parallax">
-                <div id="biogrpahy_container_outside_wrapper" class="row">
-
-
-
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-4" id="biography_selfie">picture-goes-here. Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                    <div class="col-sm-2"><br></div>
-                    <div class="biography_container col-sm-4">
-                        <h1>Biography</h1>
-                        <p class="bio">Rosalie's ecclectic talents and tastes showcase her enduring respect and love for
-                            music. Working as a composer, lyracist, singer, and producer, Rosalie has infused dynamic passion
-                            into her art. Rosalie has experience working in multiple genres and is comfortable working on
-                            a variety of mediums such as film, dance, or advertisement.</p>
+                    <div class="col-md-12 text-center">
+                        <iframe class="song last_song" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/276735940&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                        <div class="col-md-12">
+                            <p class="song_name">Goddess</p>
+                        </div>
                     </div>
-                    <div class="col-sm-1"></div>
+
 
                 </div>
 
-            </div>
-
-            <div class="row text-center bg-white" id="connect_form_outer_row">
-                <div class="col-md-4 text-left connect_form_wrapper">
-                    <div id="contact_form">
-                        <h2 class="display-4 text-center connect_form_header">Send Rosalie a Message</h2>
-                        <form class="contact_form" action="contact_form.php" method="POST">
-
-                            <input class="contact_form_inputs_buttons" type="text" id="name" name="name" placeholder=" Your Name">
-                            <div class="error" id="name_break"></div>
-                            <input class="contact_form_inputs_buttons" type="email" id="email" name="email" placeholder=" Email">
-                            <p class="error" id="email_break"></p>
-                            <textarea class="contact_form_inputs_buttons" type="text" id="message" name="message" placeholder=" Type your message here"></textarea>
-                            <p class="error" id="message_break"></p>
-                            <button type="submit" name="submit" class="contact_form_inputs_buttons" id="connect_submit_button ">Send</button>
-                        </form>
-                    </div>
-                </div>
             </div>
         </div>
+    </div>
+
+
+
+    <div class=" row text-center contact_background" id="connect_form_outer_row">
+        <!-- <div class="col-md-6"></div> -->
+        <div class="col-md-12 text-center">
+            <div id="contact_form" class="text-center connect_form_wrapper">
+                <h2 class="display-4 text-center connect_form_header">Send Rosalie a Message</h2>
+                <form class="contact_form text-center" action="assets/php/contact_form.php" method="POST">
+
+                    <input class="contact_form_inputs_buttons" type="text" id="name" name="name" placeholder=" Your Name">
+                    <div class="error" id="name_break"></div>
+                    <input class="contact_form_inputs_buttons" type="email" id="email" name="email" placeholder=" Email">
+                    <p class="error" id="email_break"></p>
+                    <textarea class="contact_form_inputs_buttons" type="text" id="message" name="message" placeholder=" Type your message here"></textarea>
+                    <p class="error" id="message_break"></p>
+                    <input class="url" type="text" id="url" name="url">
+                    <span class="contact_form_inputs_buttons submit_button" id="timeout">Send</span>
+                    
+                </form>
+            </div>
+            <!-- <div class="col-md-1"></div> -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>&copy; megan rosalie kraft 2018</p>
+                <p id="footer_contact">rosalie@megankraft.com
+                    <p>design by benjamin dally</p>
+            </div>
+
+        </div>
+    </footer>
+
     </div>
 </body>
